@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "98de36f7-1783-44a0-aca1-634898eaf383",
+		"name": "EmployeeSpringRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Anuradha\",\r\n    \"department\":\"IT\",\r\n    \"address\":\"SG\",\r\n    \"salary\":20000\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/SpringRestHibernateCrud/addEmp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"SpringRestHibernateCrud",
+						"addEmp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8084/SpringRestHibernateCrud/getEmployee/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"SpringRestHibernateCrud",
+						"getEmployee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GelAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/SpringRestHibernateCrud/getAllEmps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"SpringRestHibernateCrud",
+						"getAllEmps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\" : \"AnuradhaSP\",\r\n    \"department\":\"IT\",\r\n    \"address\":\"SG\",\r\n    \"salary\":20000\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8084/SpringRestHibernateCrud/updateEmp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"SpringRestHibernateCrud",
+						"updateEmp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8084/SpringRestHibernateCrud/deleteEmp/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"SpringRestHibernateCrud",
+						"deleteEmp",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
